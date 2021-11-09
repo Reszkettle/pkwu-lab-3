@@ -53,6 +53,7 @@ Example for Request Body:
   ```
 - xml
   ```xml
+  <?xml version=\"1.0\" encoding=\"UTF-8\" ?>
   <string-analyze-statistics>
     <lower_case_letters_count>7</lower_case_letters_count>
     <upper_case_letters_count>1</upper_case_letters_count>
