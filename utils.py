@@ -2,7 +2,7 @@ from schemas import InAnalyseString
 import requests as req
 from settings import EXTERNAL_ENDPOINT
 from dicttoxml import dicttoxml
-from fastapi import HTTPException, status
+from fastapi import HTTPException
 
 
 def csv_string_from_dict(data: dict) -> str:
