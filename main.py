@@ -1,4 +1,6 @@
 from fastapi import FastAPI
+from settings import EXTERNAL_ENDPOINT
+
 
 app = FastAPI()
 
