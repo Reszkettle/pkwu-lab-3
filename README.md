@@ -19,11 +19,11 @@ Additionally, it allows to select the return format.
 
 #### **Request Body**
 
-| Type     | Name      | Optional | Description                                          |
-| -------- | --------- | -------- | ---------------------------------------------------- |
-| `string` | string    | No       | string that will be analyzed                         |
-| `string` | substring | Yes      | optional substring which occurrences will be counted |
-| `string` | format    | No       | one of the following values: ( json / xml / csv )    |
+| Type     | Name      | Optional | Description                                              |
+| -------- | --------- | -------- | -------------------------------------------------------- |
+| `string` | string    | No       | string that will be analyzed                             |
+| `string` | substring | Yes      | optional substring which occurrences will be counted     |
+| `string` | format    | No       | one of the following values: ( json / xml / csv / text ) |
 
 ### Response
 
@@ -66,4 +66,8 @@ Example for Request Body:
   ```csv
   lower_case_letters_count,upper_case_letters_count,digits_count,special_characters_count,substring_occurrences_count
   7,1,1,1,1
+  ```
+- text
+  ```
+  lower_case_letters_count: 7, upper_case_letters_count: 1, digits_count: 1, special_characters_count: 1, substring_occurrences_count: 1
   ```
