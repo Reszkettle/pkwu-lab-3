@@ -33,9 +33,9 @@ Examples for Request Body:
 
 ```json
 {
-    'string': 'Nieborak1#',
-    'substring': 'rak',
-    'format': ...
+	"string": "Nieborak1#",
+	"substring": "rak",
+	"format": "..."
 }
 ```
 
