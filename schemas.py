@@ -7,6 +7,7 @@ class Format(str, Enum):
     JSON = "json"
     XML = "xml"
     CSV = "csv"
+    TEXT = "text"
 
 
 class InAnalyseString(BaseModel):
