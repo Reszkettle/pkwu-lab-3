@@ -1,4 +1,4 @@
-from schemas import InAnalyseString
+from schemas import InAnalyseString, Format
 import requests as req
 from settings import EXTERNAL_ENDPOINT
 from dicttoxml import dicttoxml
@@ -27,11 +27,11 @@ def process_request(request: InAnalyseString) -> str:
         'string': request.string, 'substring': request.substring})
     if response.status_code == 200:
         data = response.json()
-        if request.format == 'xml':
+        if request.format == Format.XML:
             return dicttoxml(data, custom_root='string-analyze-statistics', attr_type=False)
-        elif request.format == 'csv':
+        elif request.format == Format.CSV:
             return csv_string_from_dict(data)
-        elif request.format == 'text':
+        elif request.format == Format.TEXT:
             return text_from_dict(data)
         return data
 
