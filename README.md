@@ -27,9 +27,9 @@ Additionally, it allows to select the return format.
 
 ### Response
 
-On success (HTTP 200 status) this endpoint returns following Response Bodies for given formats:
+On success (HTTP 200 status) this endpoint returns single string that contains the structure for the format that you've provided in request body:
 
-Examples for Request Body:
+Example for Request Body:
 
 ```json
 {
@@ -39,7 +39,7 @@ Examples for Request Body:
 }
 ```
 
-When `format` is:
+### Response string when `format` is:
 
 - json
   ```json
