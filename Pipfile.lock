@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "838dd0b0eeee407d20b6266b618ba292778dabe7e6252ea080b141db08ebf39f"
+            "sha256": "7410363503e2b413072f737c264256c041afb180e4f65fee9b6448e566ec3571"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -62,6 +62,13 @@
             ],
             "markers": "platform_system == 'Windows'",
             "version": "==0.4.4"
+        },
+        "dicttoxml": {
+            "hashes": [
+                "sha256:ea44cc4ec6c0f85098c57a431a1ee891b3549347b07b7414c8a24611ecf37e45"
+            ],
+            "index": "pypi",
+            "version": "==1.7.4"
         },
         "fastapi": {
             "hashes": [
